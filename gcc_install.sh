@@ -1,3 +1,4 @@
+#!/bin/bash
 yum install wget -y
 yum install gcc -y
 yum install bzip2 -y
