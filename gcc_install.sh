@@ -6,6 +6,7 @@ yum install m4 -y
 yum install make -y
 yum -y install glibc-devel.i686 glibc-devel ibstdc++-devel.i686
 yum install texi2html texinfo -y
+yum install gcc-c++ -y
 
 wget https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.gz
 wget https://ftp.gnu.org/gnu/gmp/gmp-6.2.0.tar.bz2
