@@ -27,5 +27,7 @@ jobs:
         run: ./docker-setup.sh
       
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2.1.1
-        with: gcc_centos_x86_64.tar.gz
+        uses: actions/upload-artifact@v2
+        with: 
+          name: Binaries
+          path: gcc_centos_x86_64.tar.gz
