@@ -41,7 +41,7 @@ make
 make install
 popd
 
-pushd mpc-1.2.0
+pushd gcc-10.2.0
 ./configure --prefix=$pwd --with-gmp=$pwd --with-mpfr=$pwd --with-mpc=$pwd --disable-multilib
 make 
 make install
