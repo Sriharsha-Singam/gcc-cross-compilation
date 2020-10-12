@@ -41,9 +41,11 @@ make
 make install
 popd
 
+export LD_LIBRARY_PATH="$pwd"/lib
+echo $LD_LIBRARY_PATH
 pushd gcc-10.2.0
 ./configure --prefix=$pwd --with-gmp=$pwd --with-mpfr=$pwd --with-mpc=$pwd --disable-multilib
 make 
 make install
 popd
-
+echo $LD_LIBRARY_PATH
