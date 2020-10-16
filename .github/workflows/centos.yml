@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Centos
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -31,5 +31,10 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
         with: 
-          name: Binaries
+          name: Centos GCC Binaries and Libs
+          path: gcc_centos_x86_64.tar.gz
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v2.0.5
+        with:
+          name: Centos GCC Binaries and Libs
           path: gcc_centos_x86_64.tar.gz
